@@ -1,6 +1,7 @@
 package _04_Directory_Iteration;
 
 import java.io.File;
+import java.io.FileWriter;
 
 import javax.swing.JFileChooser;
 
@@ -29,5 +30,21 @@ public class DirectoryIterator {
 		 * Be aware of possible directories inside of directories.
 		 * (e.g //Copyright © 2019 FirstName LastName)
 		 */
+		
+		for(File p : new File("src").listFiles()) {
+			for(File f : p.listFiles()) {
+				if(f.getAbsolutePath().endsWith(".java")) {
+					try {
+						FileWriter writer = new FileWriter(f, true);
+						writer.write("\n //Copyright 2020 to a random doggo");
+						writer.close();
+					} catch (Exception e) {
+						
+					}
+				}
+			}
+		}
 	}
 }
+
+ //Copyright 2020 to a random doggo

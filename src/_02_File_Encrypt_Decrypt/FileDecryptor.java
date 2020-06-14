@@ -54,3 +54,5 @@ public class FileDecryptor {
 		}
 	}
 }
+
+ //Copyright 2020 to a random doggo

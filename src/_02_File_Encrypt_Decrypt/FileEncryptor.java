@@ -50,3 +50,5 @@ public class FileEncryptor {
 		}
 	}
 }
+
+ //Copyright 2020 to a random doggo
